@@ -20,16 +20,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
-        <style type="text/css">
-            
-            body {
-                background-repeat: no-repeat;
-                background-size: cover;
-                }
-            </style>
+    <!-- Custom Css for the body -->
+    <style type="text/css">
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 
-<body background = "C:\Users\Brendan\Desktop\classwork\Friend-Finder\app\public\images\Bright Sky.jpg" >
+<body background="C:\Users\Brendan\Desktop\classwork\Friend-Finder\app\public\images\Bright Sky.jpg">
+    
     <div class="container">
         <br>
         <h2>Survey Questions</h2>
@@ -47,7 +48,7 @@
         </h3>
         <h4>You often see yourself contemplating about the universe, life, and everything in existance.</h4>
         <select class="custom-select" id="q1">
-            <option>Select an option</option>
+            <option class="defaultChoice">Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -61,7 +62,7 @@
         </h3>
         <h4>You think in a positive light.</h4>
         <select class="custom-select" id="q2">
-            <option>Select an option</option>
+            <option class="defaultChoice">Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -75,7 +76,7 @@
         </h3>
         <h4>You often make people laugh because of your unique sense of humor.</h4>
         <select class="custom-select" id="q3">
-            <option>Select an option</option>
+            <option class="defaultChoice">Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -89,7 +90,7 @@
         </h3>
         <h4>You often think outside the box.</h4>
         <select class="custom-select" id="q4">
-            <option>Select an option</option>
+            <option class="defaultChoice">Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -103,7 +104,7 @@
         </h3>
         <h4>You search for adventure in unknown places.</h4>
         <select class="custom-select" id="q5">
-            <option>Select an option</option>
+            <option class="defaultChoice">Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -117,7 +118,7 @@
         </h3>
         <h4>You have a diverse group of friends.</h4>
         <select class="custom-select" id="q6">
-            <option>Select an option</option>
+            <option class="defaultChoice">Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -131,7 +132,7 @@
         </h3>
         <h4>You believe that exercise for body, mind and soul is top prioity.</h4>
         <select class="custom-select" id="q7">
-            <option>Select an option</option>
+            <option class="defaultChoice">Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -145,7 +146,7 @@
         </h3>
         <h4>You love furry animals.</h4>
         <select class="custom-select" id="q8">
-            <option>Select an option</option>
+            <option class="defaultChoice">Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -159,7 +160,7 @@
         </h3>
         <h4>You Pina Coladas and getting caught in the rain.</h4>
         <select class="custom-select" id="q9">
-            <option>Select an option</option>
+            <option class="defaultChoice">Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -173,7 +174,7 @@
         </h3>
         <h4>You like big butts that cannot lie.</h4>
         <select class="custom-select" id="q10">
-            <option>Select an option</option>
+            <option class="defaultChoice">Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -182,21 +183,20 @@
         </select>
         <br>
         <br>
-        <button type="button" class="btn btn-primary btn-lg btn-block">
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="submit">
             <i class="fa fa-check-circle"></i> Submit</button>
         <hr>
 
 
-
         <!-- Modal -->
-        <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Best Match</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                     </div>
                     <div class="modal-body" id="bestMatch">
                         <p>Modal body text goes here.</p>
@@ -220,24 +220,8 @@
 
     </div>
 
-
-
-
-
-
-
-
+    <!-- Logic for receiving data -->
     <script type="text/javascript">
-        var config = {
-            '.chosen-select': {},
-            '.chosen-select-deselect': { allow_single_deselect: true },
-            '.chosen-select-no-single': { disable_search_threshold: 10 },
-            '.chosen-select-no-results': { no_results_text: 'Oops, nothing found!' },
-            '.chosen-select-width': { width: "95%" }
-        }
-        for (var selector in config) {
-            $(selector).chosen(config[selector]);
-        }
 
         // Capture the form inputs 
         $("#submit").on("click", function () {
@@ -250,9 +234,9 @@
                         isValid = false;
                 });
 
-                $('.chosen-select').each(function () {
+                $('.custom-select').each(function () {
 
-                    if ($(this).val() === "")
+                    if ($(this).val() === 'Select an option')
                         isValid = false
                 })
                 return isValid;
