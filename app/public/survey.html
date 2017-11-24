@@ -10,7 +10,6 @@
     <!-- Bootstrap Css -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap JS and JQuery -->
@@ -20,13 +19,19 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
+        <style type="text/css">
+            
+            body {
+                background-repeat: no-repeat;
+                background-size: cover;
+                }
+            </style>
 </head>
 
-<body>
+<body background = "C:\Users\Brendan\Desktop\classwork\Friend-Finder\app\public\images\Bright Sky.jpg" >
     <div class="container">
-
+        <br>
         <h2>Survey Questions</h2>
         <hr>
         <h3>
@@ -41,38 +46,154 @@
             <strong>Question 1</strong>
         </h3>
         <h4>You often see yourself contemplating about the universe, life, and everything in existance.</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
+        <select class="custom-select" id="q1">
+            <option>Select an option</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
             <option value="4">4 (Agree)</option>
             <option value="5">5 (Strongly Agree)</option>
         </select>
-        <!-- <div class="chosen-container chosen-container-single" style="width: 157px;" title id="q1_chosen">
-            <a class="chosen-single chosen-default">
-                <span>Select an Option</span>
-                <div>
-                    <b></b>
-                </div>
-            </a>
-            <div class="chosen-drop">
-                <ul class="chosen-results">
-                    <li class="active-result" data-option-array-index="1" style>1 (Strongly Disagree)</li>
-                    <li class="active-result" data-option-array-index="2" style>2 (Disagree)</li>
-                    <li class="active-result" data-option-array-index="3" style>3 (Neutral)</li>
-                    <li class="active-result" data-option-array-index="4" style>4 (Agree)</li>
-                    <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
-                </ul>
-            </div>
-        </div> -->
+        <br>
+        <br>
+        <h3>
+            <strong>Question 2</strong>
+        </h3>
+        <h4>You think in a positive light.</h4>
+        <select class="custom-select" id="q2">
+            <option>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2 (Disagree)</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4 (Agree)</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3>
+            <strong>Question 3</strong>
+        </h3>
+        <h4>You often make people laugh because of your unique sense of humor.</h4>
+        <select class="custom-select" id="q3">
+            <option>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2 (Disagree)</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4 (Agree)</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3>
+            <strong>Question 4</strong>
+        </h3>
+        <h4>You often think outside the box.</h4>
+        <select class="custom-select" id="q4">
+            <option>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2 (Disagree)</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4 (Agree)</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3>
+            <strong>Question 5</strong>
+        </h3>
+        <h4>You search for adventure in unknown places.</h4>
+        <select class="custom-select" id="q5">
+            <option>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2 (Disagree)</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4 (Agree)</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3>
+            <strong>Question 6</strong>
+        </h3>
+        <h4>You have a diverse group of friends.</h4>
+        <select class="custom-select" id="q6">
+            <option>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2 (Disagree)</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4 (Agree)</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3>
+            <strong>Question 7</strong>
+        </h3>
+        <h4>You believe that exercise for body, mind and soul is top prioity.</h4>
+        <select class="custom-select" id="q7">
+            <option>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2 (Disagree)</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4 (Agree)</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3>
+            <strong>Question 8</strong>
+        </h3>
+        <h4>You love furry animals.</h4>
+        <select class="custom-select" id="q8">
+            <option>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2 (Disagree)</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4 (Agree)</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3>
+            <strong>Question 9</strong>
+        </h3>
+        <h4>You Pina Coladas and getting caught in the rain.</h4>
+        <select class="custom-select" id="q9">
+            <option>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2 (Disagree)</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4 (Agree)</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h3>
+            <strong>Question 10</strong>
+        </h3>
+        <h4>You like big butts that cannot lie.</h4>
+        <select class="custom-select" id="q10">
+            <option>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2 (Disagree)</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4 (Agree)</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg btn-block">
+            <i class="fa fa-check-circle"></i> Submit</button>
+        <hr>
+
+
 
         <!-- Modal -->
         <div class="modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Best Match</h5>
+                        <h5 class="modal-title">Best Match</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -86,6 +207,16 @@
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div class="container">
+                <p>
+                    <a href="/api/friends" style="color:crimson">API Friends List</a>
+                    |
+                    <a href="https://github.com/brendan-kellams/Friend-Finder" style="color:crimson">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
 
     </div>
 
