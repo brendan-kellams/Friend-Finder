@@ -33,7 +33,7 @@ module.exports = function(app) {
             if (diff < difference) {
                 difference = diff;
                 nameMatch = friends[i].name;
-                matchImage = friends[i].photo;
+                imageMatch = friends[i].photo;
             }
         }
 

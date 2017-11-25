@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/brendan-kellams/Friend-Finder#readme",
   "dependencies": {
-    "body-parser": "^1.18.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
   }
 }
