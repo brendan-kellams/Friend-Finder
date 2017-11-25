@@ -30,7 +30,7 @@
 </head>
 
 <body background="C:\Users\Brendan\Desktop\classwork\Friend-Finder\app\public\images\Bright Sky.jpg">
-    
+
     <div class="container">
         <br>
         <h2>Survey Questions</h2>
@@ -199,7 +199,8 @@
                             </button>
                     </div>
                     <div class="modal-body" id="bestMatch">
-                        <p>Modal body text goes here.</p>
+                        <h5 id="matchName"></h5>
+                        <img id="matchImg" class='materialboxed' width="650px" src="">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -245,27 +246,28 @@
             // If all required fields are filled
             if (validateForm() == true) {
                 // Create an object for the user's data
-                var userData = {
+                var userInput = {
                     name: $("#name").val(),
                     photo: $("#photo").val(),
                     scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(),]
-                }
+                };
 
 
                 // Grab the URL of the website
-                var currentURL = window.location.origin;
+                // var currentURL = window.location.origin;
 
                 // AJAX post the data to the friends API. 
-                $.post(currentURL + "/api/friends", userData, function (data) {
+                $.post("/api/friends", userInput)
+                    .done(function (data) {
 
-                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                    $("#matchName").text(data.name);
-                    $('#matchImg').attr("src", data.photo);
+                        // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                        $("#matchName").text(data.nameMatch);
+                        $('#matchImg').attr("src", data.imageMatch);
 
-                    // Show the modal with the best match 
-                    $("#resultsModal").modal('toggle');
+                        // Show the modal with the best match 
+                        $("#resultsModal").modal('toggle');
 
-                });
+                    });
             }
             else {
                 alert("Please fill out all fields before submitting!");
