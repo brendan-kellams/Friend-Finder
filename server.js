@@ -5,7 +5,7 @@ var path = require('path');
 
 // Config Express
 var app = express();
-var PORT = process.env.PORT;
+var PORT = process.env.PORT || 3000;
 
 // Creating a path to allow access to the public file
 app.use(express.static(path.join(__dirname,'./app/public')));
