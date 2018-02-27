@@ -3,7 +3,7 @@
 var userArray = [
     {
         name: 'King Arthur: King of the Britians',
-        photo: 'https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjAweKDn9nXAhVRleAKHS_zB3MQjRwIBw&url=http%3A%2F%2Ftvtropes.org%2Fpmwiki%2Fpmwiki.php%2FCharacters%2FMontyPythonAndTheHolyGrail&psig=AOvVaw2InUcRmDuBRI8IhxHKvGfZ&ust=1511682629060731',
+        photo: 'https://s-media-cache-ak0.pinimg.com/originals/7d/f8/70/7df870647deaed6f0c6c507f4c8bb221.jpg',
         scores: [
             '4',
             '4',

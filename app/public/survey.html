@@ -13,22 +13,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap JS and JQuery -->
-    <<script
-    src="https://code.jquery.com/jquery-3.2.1.js"
-    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 
-    <!-- Custom Css for the body -->
-    <style type="text/css">
-        body {
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
+        <!-- Chosen -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.3/chosen.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.3/chosen.jquery.min.js"></script>
+
+        <!-- Custom Css for the body -->
+        <style type="text/css">
+            body {
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
 </head>
 
 <body background="C:\Users\Brendan\Desktop\classwork\Friend-Finder\app\public\images\Bright Sky.jpg">
@@ -49,8 +50,8 @@
             <strong>Question 1</strong>
         </h3>
         <h4>You often see yourself contemplating about the universe, life, and everything in existance.</h4>
-        <select class="custom-select" id="q1">
-            <option class="defaultChoice">Select an option</option>
+        <select class="chosen-select" id="q1">
+            <option class="defaultChoice"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -63,8 +64,8 @@
             <strong>Question 2</strong>
         </h3>
         <h4>You think in a positive light.</h4>
-        <select class="custom-select" id="q2">
-            <option class="defaultChoice">Select an option</option>
+        <select class="chosen-select" id="q2">
+            <option class="defaultChoice"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -77,8 +78,8 @@
             <strong>Question 3</strong>
         </h3>
         <h4>You often make people laugh because of your unique sense of humor.</h4>
-        <select class="custom-select" id="q3">
-            <option class="defaultChoice">Select an option</option>
+        <select class="chosen-select" id="q3">
+            <option class="defaultChoice"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -91,8 +92,8 @@
             <strong>Question 4</strong>
         </h3>
         <h4>You often think outside the box.</h4>
-        <select class="custom-select" id="q4">
-            <option class="defaultChoice">Select an option</option>
+        <select class="chosen-select" id="q4">
+            <option class="defaultChoice"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -105,8 +106,8 @@
             <strong>Question 5</strong>
         </h3>
         <h4>You search for adventure in unknown places.</h4>
-        <select class="custom-select" id="q5">
-            <option class="defaultChoice">Select an option</option>
+        <select class="chosen-select" id="q5">
+            <option class="defaultChoice"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -119,8 +120,8 @@
             <strong>Question 6</strong>
         </h3>
         <h4>You have a diverse group of friends.</h4>
-        <select class="custom-select" id="q6">
-            <option class="defaultChoice">Select an option</option>
+        <select class="chosen-select" id="q6">
+            <option class="defaultChoice"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -133,8 +134,8 @@
             <strong>Question 7</strong>
         </h3>
         <h4>You believe that exercise for body, mind and soul is top prioity.</h4>
-        <select class="custom-select" id="q7">
-            <option class="defaultChoice">Select an option</option>
+        <select class="chosen-select" id="q7">
+            <option class="defaultChoice"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -147,8 +148,8 @@
             <strong>Question 8</strong>
         </h3>
         <h4>You love furry animals.</h4>
-        <select class="custom-select" id="q8">
-            <option class="defaultChoice">Select an option</option>
+        <select class="chosen-select" id="q8">
+            <option class="defaultChoice"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -161,8 +162,8 @@
             <strong>Question 9</strong>
         </h3>
         <h4>You Pina Coladas and getting caught in the rain.</h4>
-        <select class="custom-select" id="q9">
-            <option class="defaultChoice">Select an option</option>
+        <select class="chosen-select" id="q9">
+            <option class="defaultChoice"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -175,8 +176,8 @@
             <strong>Question 10</strong>
         </h3>
         <h4>You like big butts that cannot lie.</h4>
-        <select class="custom-select" id="q10">
-            <option class="defaultChoice">Select an option</option>
+        <select class="chosen-select" id="q10">
+            <option class="defaultChoice"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2 (Disagree)</option>
             <option value="3">3 (Neutral)</option>
@@ -226,6 +227,26 @@
     <!-- Logic for receiving data -->
     <script type="text/javascript">
 
+        // var config = {
+        //     '.chosen-select': {},
+        //     '.chosen-select-deselect': { allow_single_deselect: true },
+        //     '.chosen-select-no-single': { disable_search_threshold: 10 },
+        //     '.chosen-select-no-results': { no_results_text: 'Oops, nothing found!' },
+        //     '.chosen-select-width': { width: "95%" }
+        // }
+        // for (var selector in config) {
+        //     $(selector).chosen(config[selector]);
+        // }
+
+        // Chosen Jquery
+        $(document).ready(function () {
+            $('.chosen-select').chosen({
+                no_results_text: "Oops, nothing found!",
+                placeholder_text_single: "Select an Option"
+
+            });
+        });
+
         // Capture the form inputs 
         $("#submit").on("click", function () {
 
@@ -237,7 +258,7 @@
                         isValid = false;
                 });
 
-                $('.custom-select').each(function () {
+                $('.chosen-select').each(function () {
 
                     if ($(this).val() === 'Select an option')
                         isValid = false
